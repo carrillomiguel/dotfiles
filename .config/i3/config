@@ -13,7 +13,12 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
+
+# Set font
 font terminus: 8
+
+# No window borders
+default_border none
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -30,8 +35,17 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-# MullvadVPN
+# Open VPN GUI on startup
 exec --no-startup-id mullvad-gui
+
+# Set background image on startup
+exec_always ./.fehbg
+
+# Run compositor on startup
+exec_always compton
+
+# Polybar panel on startup
+exec_always --no-startup-id polybar --config=/home/user/.config/polybar/config.ini top
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -63,23 +77,11 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
-
 # move focused window
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
 # bindsym $mod+h split h
@@ -155,20 +157,10 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
         bindsym h resize shrink width 10 px or 10 ppt
         bindsym j resize grow height 10 px or 10 ppt
         bindsym k resize shrink height 10 px or 10 ppt
         bindsym l resize grow width 10 px or 10 ppt
-
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -178,25 +170,18 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-# bar {
-#        status_command i3status
-#}
-
 # Shortcuts
-
-bindsym $mod+y exec freetube
+# Librewolf : A privacy oriented fork of Firefox
 bindsym $mod+w exec librewolf
+# Brave : A privacy oriented fork of Chrome
 bindsym $mod+z exec brave-browser
+# Freetube : A customizable frontend for Youtube
+bindsym $mod+y exec freetube
+# Audio Device Options
 bindsym $mod+u exec pavucontrol
+# Lollypop : A GUI music player
 bindsym $mod+b exec lollypop
+# Anki : Flashcard App
 bindsym $mod+p exec anki
+# Take a screenshot
 bindsym Print exec xfce4-screenshooter
-
-exec_always --no-startup-id polybar --config=/home/user/.config/polybar/config.ini top
-
-default_border none
-
-exec_always ./.fehbg
-exec_always compton
