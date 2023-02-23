@@ -1,1 +1,29 @@
+font:
+        normal:
+                family: monospace
+
+        size: 11
+
+colors:
+        primary:
+                background: "#000000"
+                foreground: "#FDF5E6"
+        normal:
+                red: "#F7233D"
+                green: "#3CB371"
+                yellow: "#FFD700"
+                blue: "#7B68EE"
+                magenta: "#FF00FF"
+                cyan: "#AFEEEE"
+                black: "#000000"
+                white: "#FDF5E6"
+
+cursor:
+        style:
+                shape: Block
+                blinking: Always
+                blink-interval: 750
+
+shell:
+        program: /bin/zsh
 
