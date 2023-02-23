@@ -10,3 +10,8 @@ HISTFILE=~/.cache/zsh/history
 
 #vi mode
 bindkey -v
+
+#aliases
+alias ls='ls --color=auto'
+alias sl='ls --color=auto'
+alias df='df -h'
