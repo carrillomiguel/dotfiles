@@ -15,7 +15,7 @@ set $mod Mod4
 # is used in the bar {} block below.
 
 # Set font
-font terminus: 8
+font monospace: 8
 
 # No window borders
 default_border none
@@ -185,3 +185,5 @@ bindsym $mod+b exec lollypop
 bindsym $mod+p exec anki
 # Take a screenshot
 bindsym Print exec xfce4-screenshooter
+# Qbittorrent : Torrent Manager
+bindsym $mod+t exec qbittorrent
