@@ -10,10 +10,10 @@ Here are some of my configuration files for my custom Linux desktop. Feel free t
 
 This repository includes configuration files for the following:
 
-[alacritty](https://github.com/alacritty/alacritty)
-[bash](https://git.savannah.gnu.org/cgit/bash.git)
-[i3](https://github.com/i3/i3)
-[neofetch](https://github.com/dylanaraps/neofetch)
++ [alacritty](https://github.com/alacritty/alacritty)
++ [bash](https://git.savannah.gnu.org/cgit/bash.git)
++ [i3](https://github.com/i3/i3)
++ [neofetch](https://github.com/dylanaraps/neofetch)
 [neovim](https://github.com/neovim/neovim)
 [polybar](https://github.com/polybar/polybar)
 [xorg](https://gitlab.freedesktop.org/xorg/xserver)
