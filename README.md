@@ -19,7 +19,7 @@ This repository includes configuration files for the following:
 + [xorg](https://gitlab.freedesktop.org/xorg/xserver)
 + [zsh](https://sourceforge.net/p/zsh/code/ci/master/tree/)
 
-I also use the GTK Theme [Materia Blackout](https://www.xfce-look.org/p/1381066) and the [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) icons 
+I also use the GTK Theme [Materia Blackout](https://www.xfce-look.org/p/1381066) and the [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) icons. 
 
 ## Usage
 
