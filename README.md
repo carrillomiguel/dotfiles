@@ -14,10 +14,10 @@ This repository includes configuration files for the following:
 + [bash](https://git.savannah.gnu.org/cgit/bash.git)
 + [i3](https://github.com/i3/i3)
 + [neofetch](https://github.com/dylanaraps/neofetch)
-[neovim](https://github.com/neovim/neovim)
-[polybar](https://github.com/polybar/polybar)
-[xorg](https://gitlab.freedesktop.org/xorg/xserver)
-[zsh](https://sourceforge.net/p/zsh/code/ci/master/tree/)
++ [neovim](https://github.com/neovim/neovim)
++ [polybar](https://github.com/polybar/polybar)
++ [xorg](https://gitlab.freedesktop.org/xorg/xserver)
++ [zsh](https://sourceforge.net/p/zsh/code/ci/master/tree/)
 
 I also use the GTK Theme [Materia Blackout](https://www.xfce-look.org/p/1381066) and the [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) icons 
 
