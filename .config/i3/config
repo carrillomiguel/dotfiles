@@ -15,13 +15,12 @@ set $mod Mod4
 # is used in the bar {} block below.
 
 # Set font
-font monospace: 8
+font pango:Terminus 8
 
 # No window borders
 default_border none
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
@@ -39,10 +38,10 @@ exec --no-startup-id nm-applet
 exec --no-startup-id mullvad-gui
 
 # Set background image on startup
-exec_always ./.fehbg
+exec_always --no-startup-id ./.fehbg
 
 # Run compositor on startup
-exec_always compton
+exec_always --no-startup-id compton
 
 # Polybar panel on startup
 exec_always --no-startup-id polybar --config=/home/user/.config/polybar/config.ini top
@@ -87,7 +86,7 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # split in horizontal orientation
-bindsym $mod+h split c
+bindsym $mod+c split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -173,7 +172,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Shortcuts
+# Software Shortcuts
 # Librewolf : A privacy oriented fork of Firefox
 bindsym $mod+w exec --no-startup-id librewolf
 # Brave : A privacy oriented fork of Chrome
