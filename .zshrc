@@ -32,5 +32,5 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
 # Link shell scripts to the path
-path+=('/home/user/sh')
+path+=($HOME/sh)
 export PATH
